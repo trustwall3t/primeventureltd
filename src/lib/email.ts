@@ -114,12 +114,12 @@ export const emailTemplates: EmailTemplates = {
 		html: `
 		${emailStyles}
 		<div class="container">
-			<img src="https://primventuresltd.vercel.app/logo.png" alt="Prime Ventures Limited Logo" class="logo" />
+			<img src="https://primeventuresltd.vercel.app/logo.png" alt="Prime Ventures Limited Logo" class="logo" />
 			<h1>Welcome to Prime Ventures Limited, ${name}!</h1>
 			<p>Thank you for registering with us. We're excited to have you on board!</p>
 			<h4>Your Verification Token is: <strong>${token}</strong></h4>
 			<p>Verify your email by clicking the button below:</p>
-			<a href="https://primventuresltd.vercel.app/auth/verify?email=${email}" class="button">Verify Email</a>
+			<a href="https://primeventuresltd.vercel.app/auth/verify?email=${email}" class="button">Verify Email</a>
 			<p>If you have any questions, feel free to contact our support team.</p>
 			<div class="footer">
 				<p>Best regards,<br>The Prime Ventures Limited Team</p>
@@ -132,7 +132,7 @@ export const emailTemplates: EmailTemplates = {
 		html: `
 		${emailStyles}
 		<div class="container">
-			<img src="https://primventuresltd.vercel.app/logo.png" alt="Prime Ventures Limited Logo" class="logo" />
+			<img src="https://primeventuresltd.vercel.app/logo.png" alt="Prime Ventures Limited Logo" class="logo" />
 			<h1>Password Reset Request</h1>
 			<p>You have requested to reset your password. Click the button below to reset your password:</p>
 			<a href="${data.link}" class="button">Reset Password</a>
@@ -148,7 +148,7 @@ export const emailTemplates: EmailTemplates = {
 		html: `
 		${emailStyles}
 		<div class="container">
-			<img src="https://primventuresltd.vercel.app/logo.png" alt="Prime Ventures Limited Logo" class="logo" />
+			<img src="https://primeventuresltd.vercel.app/logo.png" alt="Prime Ventures Limited Logo" class="logo" />
 			<h1>Deposit Request</h1>
 			<p>You have requested to deposit <span class="amount">$${data.amount}</span> into your account.</p>
 			<div class="footer">
@@ -162,7 +162,7 @@ export const emailTemplates: EmailTemplates = {
 		html: `
 		${emailStyles}
 		<div class="container">
-			<img src="https://primventuresltd.vercel.app/logo.png" alt="Prime Ventures Limited Logo" class="logo" />
+			<img src="https://primeventuresltd.vercel.app/logo.png" alt="Prime Ventures Limited Logo" class="logo" />
 			<h1>Deposit Confirmation</h1>
 			<p>Your deposit of <span class="amount">$${data.amount}</span> has been confirmed.</p>
 			<div class="footer">
@@ -176,7 +176,7 @@ export const emailTemplates: EmailTemplates = {
 		html: `
 		${emailStyles}
 		<div class="container">
-			<img src="https://primventuresltd.vercel.app/logo.png" alt="Prime Ventures Limited Logo" class="logo" />
+			<img src="https://primeventuresltd.vercel.app/logo.png" alt="Prime Ventures Limited Logo" class="logo" />
 			<h1>Withdrawal Request</h1>
 			<p>You have requested to withdraw <span class="amount">$${data.amount}</span> from your account.</p>
 			<div class="footer">
@@ -190,7 +190,7 @@ export const emailTemplates: EmailTemplates = {
 		html: `
 		${emailStyles}
 		<div class="container">
-			<img src="https://primventuresltd.vercel.app/logo.png" alt="Prime Ventures Limited Logo" class="logo" />
+			<img src="https://primeventuresltd.vercel.app/logo.png" alt="Prime Ventures Limited Logo" class="logo" />
 			<h1>Withdrawal Confirmation</h1>
 			<p>Your withdrawal of <span class="amount">$${data.amount}</span> has been confirmed.</p>
 			<div class="footer">
@@ -204,7 +204,7 @@ export const emailTemplates: EmailTemplates = {
 		html: `
 		${emailStyles}
 		<div class="container">
-			<img src="https://primventuresltd.vercel.app/logo.png" alt="Prime Ventures Limited Logo" class="logo" />
+			<img src="https://primeventuresltd.vercel.app/logo.png" alt="Prime Ventures Limited Logo" class="logo" />
 			<h1>Trade Confirmation</h1>
 			<p>Trade of <span class="amount">$${data.amount} ${data.symbol}</span> with order type ${data.type} has been successfully executed.</p>
 			<div class="footer">
@@ -221,10 +221,10 @@ export const emailTemplates: EmailTemplates = {
 		html: `
 		${emailStyles}
 		<div class="container">
-			<img src="https://primventuresltd.vercel.app/logo.png" alt="Prime Ventures Limited Logo" class="logo" />
+			<img src="https://primeventuresltd.vercel.app/logo.png" alt="Prime Ventures Limited Logo" class="logo" />
 			<h1>${data.type} Notification</h1>
 			<p>You have received a ${data.type} notification of <span class="amount">$${data.amount}</span>. from one of our users. Please check your dashboard to view the transaction.</p>
-			<a href="https://primventuresltd.vercel.app/admin/dashboard/transactions" class="button">View Transactions</a>
+			<a href="https://primeventuresltd.vercel.app/admin/dashboard/transactions" class="button">View Transactions</a>
 			<div class="footer">
 				<p>Best regards,<br>The Prime Ventures Limited Team</p>
 			</div>
@@ -310,10 +310,10 @@ export const sendEmail = async <T extends keyof EmailData>(
 
 		const mailOptions = {
 			from: `"Prime Ventures Limited" <${
-				process.env.EMAIL_FROM || 'noreply@primventuresltd.vercel.app'
+				process.env.EMAIL_FROM || 'noreply@primeventuresltd.vercel.app'
 			}>`,
 			replyTo: `"Prime Ventures Limited Support" <${
-				process.env.EMAIL_FROM || 'noreply@primventuresltd.vercel.app'
+				process.env.EMAIL_FROM || 'noreply@primeventuresltd.vercel.app'
 			}>`,
 			to,
 			subject,
