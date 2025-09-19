@@ -142,44 +142,7 @@ const DashboardClient = ({ user }: DashboardClientProps) => {
 					<TradingViewWidget />
 				</div>
 			</div>
-			<div className='grid grid-cols-1 lg:grid-cols-2 gap-4  bg-black rounded-md p-5'>
-				<div className='clr-grad-1 border border-gray-200 flex flex-col rounded-md gap-2 items-center py-5'>
-					<h3 className='text-2xl uppercase font-semibold'>
-						unlock next level
-					</h3>
-					<p className='text-sm'>
-						Get access to our premium features and tools.
-					</p>
-					<Image
-						src={'/dashboard/silver.png'}
-						alt='welcome'
-						width={100}
-						height={100}
-						className='max-h-[150px] max-w-[200px]'
-					/>
-					<h2 className='text-2xl font-semibold'>
-						${user.investmentBalance || '0.00'}/$100,000.00
-					</h2>
-					<p className='text-sm max-w-[400px] text-center'>
-						Your account balance is $
-						{user.walletBalance?.toFixed(2) || '0.00'}. To unlock
-						the next level, you need to deposit $
-						{100000 - (user.walletBalance ?? 0)}.
-					</p>
-				</div>
-				<div className='flex flex-col gap-2 items-center justify-center'>
-					<p className='font-medium text-center'>
-						Upgrade to the next level to get access to our premium
-						features and tools.
-					</p>
-					<Link
-						href='/dashboard/deposit'
-						className='text-sm bg-green-500 text-white rounded-md p-2 w-[150px] text-center'
-					>
-						Upgrade
-					</Link>
-				</div>
-			</div>
+			
 		</div>
 	);
 };
